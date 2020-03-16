@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            /* you can use a more complete font-family from VSCode as well */
+            font-family: arial;
+        }
+
+        .header {
+            background-color: white;
+            padding: 1em;
+            display: flex;
+        }
+
+        .main {
+            background-color: lightseagreen;
+        }
+
+
+        .clearfix {
+            overflow: auto;
+            zoom: 1;
+        }
+
+
+
+        .content {
+            padding: 1em;
+        }
+
+
+
+        @media(min-width:800px) {
+            /* Other css is here still */
+
+            .menu .column {
+                display: flex;
+                width: 100%;
+            }
+        }
+
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .box {
+            /* float: left;
+            width: 50%;
+            height:75%;
+            margin: 1em; */
+
+        }
+
+        .column {
+            /* float: left; 
+            width: 33.33%; 
+            padding: 5px;
+            display: flex;  */
+        }
+
+        .column img {
+            /* float: right; */
+            width: 30%;
+            margin: 0 0 1em 1em;
+            padding: 1em;
+        }
+
+        .column p {
+            flex-grow: 1;
+        }
+
+        .places {
+            display: flex;
+        }
+
+        .city {
+            display: flex;
+            padding-right: 1em;
+        }
+
+        /* Clearfix (clear floats) */
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <h1>Patience</h1>
+            <h1>Taruwinga</h1>
+
+            <img class="image" src="tableMoutain.jpg" style="width:300px;height:300px;">
+
+        </div>
+
+        <div class="city">
+
+            <img src="tunisia.jpg" alt="Tunisia" style="width:300px">
+            <div class="tunisia">
+                <h2> Tunisia</h2>
+
+                is one of the most modern city in Africa.It was made the most
+                administrative centre of some administrative and political organisations.
+                
+            </div>
+        </div>
+
+        <div class="foreign_language">
+            <h2>A foreign Language</h2>
+            <table style="width:100%">
+                <tr>
+                    <th>English</th>
+                    <th>Foreign</th>
+                </tr>
+                <tr>
+                    <td>hello how are you doing</td>
+                    <td>Bonjour,comment allez-vous</td>
+                </tr>
+                <tr>
+                    <td>hello how are you doing</td>
+                    <td>Bonjour,comment allez-vous</td>
+                </tr>
+                <tr>
+                    <td>hello how are you doing</td>
+                    <td>Bonjour,comment allez-vous</td>
+                </tr>
+
+            </table>
+        </div>
+
+
+        <h2>Historical places in Capetown</h2>
+        <div class="places">
+
+            <strong>City Hall </strong>
+            <div class="column">
+                <img src="cityhall.jpg" alt="cityhall">
+                <p>is located on the Grand Parade to the west of the Castle
+                    and is built from honey-colored oolitic limestone imported from Bath in England.
+                    The building was designed as the result of a public competition. A statue of Nelson
+                    Mandela on the balcony overlooking the Grand Parade was unveiled.
+                </p>
+            </div>
+
+            <strong>Castle of Good Hope</strong>
+            <div class="column">
+                <img src="goodhope.jpg" alt="goodhope">
+
+                <p>took 13 years to build. The building housed multiple
+                    services and business. It currently operates as a military museum.
+                </p>
+            </div>
+
+           
+
+            <div class="column">
+                <strong>District Six Museum</strong>
+                <img src="district.jpg" alt="district">
+
+                <p>
+                    It is a heritage project in itself. It houses an impressive
+                    collection of historical material including photographs, paintings,artefacts,physical
+                    remains
+                    like street signs,books and studies as well as audio-visual recordings.
+                    The museum has formed several partnership with dispossessed communities, both
+                    in South Africa and around the world.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
