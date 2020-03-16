@@ -24,7 +24,7 @@
 
         .clearfix {
             overflow: auto;
-            zoom: 1;
+            zoom:1;
         }
 
 
@@ -60,30 +60,25 @@
             display: flex;
         }
 
-        .box {
-            /* float: left;
-            width: 50%;
-            height:75%;
-            margin: 1em; */
-
-        }
-
-        .column {
-            /* float: left; 
-            width: 33.33%; 
-            padding: 5px;
-            display: flex;  */
-        }
+        
 
         .column img {
+            display:grid;
+            grid-template-columns: 70% 0% 30%;
             /* float: right; */
             width: 30%;
             margin: 0 0 1em 1em;
             padding: 1em;
+            width:300px;
+            height:300px;
         }
 
         .column p {
+            display:grid;
+            grid-template-columns: 70% 0% 30%;
             flex-grow: 1;
+            padding: 1em;
+            margin: 1em;
         }
 
         .places {
@@ -140,12 +135,12 @@
                     <td>Bonjour,comment allez-vous</td>
                 </tr>
                 <tr>
-                    <td>hello how are you doing</td>
-                    <td>Bonjour,comment allez-vous</td>
+                    <td>what is your name</td>
+                    <td>quel est votre nom</td>
                 </tr>
                 <tr>
-                    <td>hello how are you doing</td>
-                    <td>Bonjour,comment allez-vous</td>
+                    <td>where do you come from</td>
+                    <td>d'ou` venez-vous</td>
                 </tr>
 
             </table>
@@ -154,9 +149,8 @@
 
         <h2>Historical places in Capetown</h2>
         <div class="places">
-
-            <strong>City Hall </strong>
             <div class="column">
+            <strong>City Hall </strong>
                 <img src="cityhall.jpg" alt="cityhall">
                 <p>is located on the Grand Parade to the west of the Castle
                     and is built from honey-colored oolitic limestone imported from Bath in England.
@@ -164,9 +158,9 @@
                     Mandela on the balcony overlooking the Grand Parade was unveiled.
                 </p>
             </div>
-
-            <strong>Castle of Good Hope</strong>
             <div class="column">
+            <strong>Castle of Good Hope</strong>
+            
                 <img src="goodhope.jpg" alt="goodhope">
 
                 <p>took 13 years to build. The building housed multiple
